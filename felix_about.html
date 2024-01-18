@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Félix Rodríguez García">
+        <meta name="description" content="Presentación de Félix">
+        <meta name="keywords" content="HTML, Félix, TIC">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Félix-acerca de</title>
+        
+        <!--ESTILOS/CSS-->
+        <style> 
+            html{
+                Width: "100vw";
+                height: "100vh";  
+            }
+
+            body{
+                background-color:lightgoldenrodyellow ;
+                Width: "100vw";
+                height: "100vh";
+            }
+
+            header{
+                color:rgb(255, 255, 255);
+                font-size: 30px; 
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: black;
+                text-align: center;
+                --border-style:solid;
+                --border-color:rgb(255, 215, 141)
+            }
+            
+            nav{
+                font-size: 15px; 
+                Width: "95%";
+                height: "7px";
+                text-align: center;
+                border-style:solid;
+                border-color:rgb(255, 215, 141); 
+                margin-bottom: 6px;
+            }
+
+            nav li{
+                display: inline-block;
+                margin-right: 15px;
+            }
+
+            nav ul li a{
+                text-decoration: none;
+                color:black
+            }
+
+            body nav li a:hover { 
+                background-color:rgb(226, 226, 181); 
+                color: rgb(0, 0, 0); 
+            }
+
+            aside{
+                width: 10vw;
+                height: 77vh;
+                float: left;
+                background-color:lightgoldenrodyellow;
+                border-style:solid;
+                border-color:rgb(255, 215, 141);
+                font-size: 15px;
+            }
+
+            main{
+                width:calc(100vw - 15vw);
+                height: 77vh;
+                float: right;
+                background-color:lightgoldenrodyellow;
+                border-style:solid;
+                border-color:rgb(255, 215, 141);
+            }
+            main h1{
+                text-align:center;
+                font-size: 250%;
+                text-decoration: underline;
+            }
+
+            main p{
+                text-align: left;
+            }
+
+
+            div ul { 
+                list-style-type: none; 
+                margin: 0; 
+                padding: 0; 
+                 
+                background-color:lightgoldenrodyellow; 
+            } 
+                
+            div li a { 
+                display: block; 
+                color: #000; 
+                padding: 8px 16px; 
+                text-decoration: none;
+            } 
+
+            div li a:hover { 
+                background-color:rgb(226, 226, 181); 
+                color: black; 
+            }
+
+            footer{
+                position:fixed;
+                left:0px;
+                bottom:0px;
+                height:30px;
+                width:100%;
+                background:rgb(255, 215, 141);
+                overflow: hidden;
+            }
+
+            footer div{ 
+                float: right;
+                margin-right: 16px;
+            }
+
+            footer a{
+                text-decoration: none;
+                color: #000;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <a name="home"></a> <!--recurso para volver a inicio-->
+         
+
+        <header>    <!-- cabecera -->
+            <a href="index.html"> <img src="img/font_smpsn.png" alt="Félix Rodríguez García" width="60%" height="auto"></a>
+        </header>
+
+        
+        <nav align="center"> <!-- barra de menú superor-->
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+            
+                <li>
+                    <a  href="felix_qa.html">Cuestiones</a>
+                </li>
+
+                <li>
+                    <a  href="felix_wp.html">Tareas</a>
+                </li>
+
+                <li>
+                    <a  href="felix_about.html">Acerca de</a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <main align="Center"> <!-- contenedor para el contenido independiente de cada página-->
+            <h1>LAYOUT</h1>
+            <img src="img/layout.png" alt="esquema" width="50%" height="auto">
+            <p>
+                La pagina web se basa en una imagen de header, un menú de navegación justo debajo y otro lateral que se mantienen intactos en todas las secciones de la página.
+                <br>
+                El contenido que sufre variaciones se agrupa en main, donde en funcion de las necesidades se agregan secciones u otros elementos.
+                <br>
+                La página ha sido ajustada a una pantalla de escala 16:9, por lo que si se abre en una pantalla de dimensiones diferentes puede sufrir algunos cambios.
+            </p>
+            
+        </main>
+
+        
+        <aside> <!-- menu lateral -->
+            <div>           
+                <ul> 
+                    <li><a href="index.html">Inicio</a></li> 
+                    <li><a href="felix_qa.html">Cuestiones</a></li> 
+                    <li><a href="felix_wp.html">Tareas</a></li> 
+                    <li><a href="index_p.html">Web de Pedro</a></li> 
+                    <li><a href="felix_about.html">Acerca de</a></li>
+                </ul> 
+            </div>
+        </aside>
+        
+
+        <footer> <!--Pie de página-->
+            <a href="#home"><img  src="img/arrow.png" height="5%" height="5%" style="position: fixed; bottom: 30px; right: 20px;" /></a>
+           
+            contenido proporcionado por Félix
+            
+            <div><a href="felix_about.html">Acerca de</a></div>
+            
+            
+        </footer>
+
+    </body>
+
+
+</html>
